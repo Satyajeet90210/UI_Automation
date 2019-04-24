@@ -14,7 +14,7 @@ public class LoginPage extends TestBase {
 	@FindBy(name="password")
 	WebElement password;
 	
-	@FindBy(xpath="//input[@type='submit']")
+	@FindBy(className ="button")
 	WebElement loginBtn;
 	
 	public LoginPage(){
@@ -23,5 +23,6 @@ public class LoginPage extends TestBase {
 	public void login(String un, String pwd){
 		E_mail_address.sendKeys(un);
 		password.sendKeys(pwd);
+		loginBtn.click();
 	}
 }
