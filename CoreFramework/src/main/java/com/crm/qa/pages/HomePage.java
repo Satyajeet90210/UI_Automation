@@ -1,6 +1,5 @@
-	package com.crm.qa.pages;
+package com.crm.qa.pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -12,7 +11,7 @@ public class HomePage extends TestBase {
 	@FindBy(xpath= "//span[contains(text(),'s h')]")
 	WebElement LoggedInUserName;
 	
-	@FindBy(partialLinkText ="contacts")
+	@FindBy(partialLinkText ="Contacts")
 	public WebElement ContactsTab;
 	
 	@FindBy(partialLinkText ="tasks")

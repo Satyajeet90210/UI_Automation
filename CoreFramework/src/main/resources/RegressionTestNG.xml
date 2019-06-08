@@ -1,0 +1,14 @@
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="1" verbose="1" name="Free CRM App" >
+         
+  <test name="Free CRM Win 10 64 bits ">
+	 <classes>
+	   <class name="com.crm.qa.testcases.LoginPageTest"/>
+	   <class name="com.crm.qa.testcases.HomePageTest"/>
+	   
+	 </classes>
+   </test>
+   
+  
+</suite>
